@@ -21,6 +21,7 @@
 
       return service;
 
+      ////
       function getOrganizationList(){
         var i = 0;
         var array = [];
@@ -41,5 +42,6 @@
         }
         return array;
       }
+
     };
 })();

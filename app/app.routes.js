@@ -6,5 +6,8 @@
         .when('/', {
           template: '<homepage />'
         })
+        .when('/payment', {
+          template: '<payment_page />'
+        })
     })
 })();
