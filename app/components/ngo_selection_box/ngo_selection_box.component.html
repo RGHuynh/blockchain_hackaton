@@ -1,3 +1,3 @@
-<label for='organization'> Organization: </label><select id="organization" ng-model="$ctrl.ngo" ng-options="ngo for ngo in $ctrl.organization"></select>
-<label for='project'> Project: </label><select id="project" ng-model="$ctrl.organizationProject" ng-options="project for project in $ctrl.project($ctrl.ngo)"></select>
+<label for='organization'> Organization: </label><select id="organization" ng-model="$ctrl.ngo" ng-change="$ctrl.setSaveOrg($ctrl.ngo)" ng-options="ngo for ngo in $ctrl.organization"></select>
+<label for='project'> Project: </label><select id="project" ng-model="$ctrl.organizationProject" ng-change="$ctrl.setSaveProject($ctrl.organizationProject)" ng-options="project for project in $ctrl.project($ctrl.ngo)"></select>
 <a href="#!/payment">Next</a>

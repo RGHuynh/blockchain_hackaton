@@ -6,7 +6,9 @@
 
   function ngoSelectionBoxCtrl(ngoSelectionBoxService){
     var ctrl = this;
-    ctrl.ngo;
+
+    ctrl.setSaveOrg = ngoSelectionBoxService.setSaveOrganization;
+    ctrl.setSaveProject = ngoSelectionBoxService.setSaveOrganizationProject;
     ctrl.organizationProject;
     ctrl.organization = ngoSelectionBoxService.getOrganizationList();
     ctrl.project = ngoSelectionBoxService.getProject;

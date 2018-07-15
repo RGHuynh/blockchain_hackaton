@@ -4,6 +4,9 @@
     .factory('ngoSelectionBoxService', ngoSelectionBoxService)
 
     function ngoSelectionBoxService(){
+      var saveOrganization = {};
+      var saveOrganizationProject = {};
+
       var ngo = [
         {organization: 'Amnesty Internationial',
         project: "Campaigns"}, 
@@ -14,14 +17,34 @@
       ];
 
       var service = {
-        ngo: ngo,
+        setSaveOrganization: setSaveOrganization,
+        setSaveOrganizationProject: setSaveOrganizationProject,
+        getSaveOrganization: getSaveOrganization,
+        getSaveOrganizationProject: getSaveOrganizationProject,
         getOrganizationList: getOrganizationList,
-        getProject: getProject
+        getProject: getProject,
       };
 
       return service;
 
       ////
+
+      function setSaveOrganization(name){
+        return saveOrganization = name;
+      };
+
+      function getSaveOrganization(){
+        return saveOrganization;
+      };
+      
+      function setSaveOrganizationProject(name){
+        return saveOrganizationProject = name;
+      };
+
+      function getSaveOrganizationProject(){
+        return saveOrganizationProject;
+      };
+
       function getOrganizationList(){
         var i = 0;
         var array = [];
