@@ -47,3 +47,11 @@ h6 {
   opacity: 0.3;
 }
 
+.payment{
+  border: 1px solid #044863;
+  margin-top: 4vh;
+  padding: 10px;
+}
+.payment__center {
+  margin: auto;
+}
