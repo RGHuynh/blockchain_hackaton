@@ -9,5 +9,8 @@
         .when('/payment', {
           template: '<payment_page />'
         })
+        .when('/receipt', {
+          template: '<receipt_page />'
+        })
     })
 })();

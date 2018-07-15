@@ -1,4 +1,5 @@
 (function(){
+  
   var config = {
     templateUrl: '/app/pages/paymentPage/paymentPage.component.html'
   }
