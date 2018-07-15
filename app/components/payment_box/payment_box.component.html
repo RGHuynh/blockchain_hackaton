@@ -7,37 +7,37 @@
           <div class="row">
             <div class="form-group">
               <label for="amount">AMOUNT</label>
-              <input id="amount" class="form-control" ng-model='$ctrl.amount' type="text" placeholder="Amount">
+              <input id="amount" class="form-control" ng-change="$ctrl.payment($ctrl.amount)" ng-model='$ctrl.amount' type="text" placeholder="Amount">
             </div>
           </div>
           <div class="row">
             <div class="form-group">
               <label for="fullName">FULL NAME</label>
-              <input id="fullName" class="form-control" ng-model='$ctrl.fullName' type="text" placeholder="Full Name">
+              <input id="fullName" class="form-control" ng-change="$ctrl.setFullname($ctrl.fullName)" ng-model='$ctrl.fullName' type="text" placeholder="Full Name">
             </div>
           </div>
           <div class="row">
             <div class="form-group">
               <label for="cardNumber">CARD NUMBER</label>
-              <input class="form-control" ng-model='$ctrl.cardNumber' id="cardNumber" type="text" placeholder="Card Number">
+              <input class="form-control" ng-change="$ctrl.setcardNumber($ctrl.cardNumber)"  ng-model='$ctrl.cardNumber' id="cardNumber" type="text" placeholder="Card Number">
             </div>
           </div>
           <div class="row">
             <div class="form-group">
               <label for="month">MONTH</label>
-              <input id="month" class="form-control" ng-model='$ctrl.month' type="text" placeholder="Month">
+              <input id="month" class="form-control" ng-change="$ctrl.setMonth($ctrl.month)" ng-model='$ctrl.month' type="text" placeholder="Month">
             </div>
           </div>
           <div class="row">
             <div class="form-group">
               <label for="year">YEAR</label>
-              <input id="year" class="form-control" ng-model='$ctrl.year' type="text" placeholder="Year">
+              <input id="year" class="form-control" ng-change="$ctrl.setYear($ctrl.year)" ng-model='$ctrl.year' type="text" placeholder="Year">
             </div>
           </div>
           <div class="row">
             <div class="form-group">
               <label for="cvv">CVV</label>
-              <input id="cvv" class="form-control" ng-model='$ctrl.cvv' type="text" placeholder="CVV">
+              <input id="cvv" class="form-control" ng-change="$ctrl.setCvv($ctrl.cvv)" ng-model='$ctrl.cvv' type="text" placeholder="CVV">
             </div>
           </div>
           <a class="btn btn-success btn-lg" href="#!/receipt">Proceed</a>
