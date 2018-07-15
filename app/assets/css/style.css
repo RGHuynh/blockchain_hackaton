@@ -39,12 +39,17 @@ h6 {
 
 .masthead .overlay {
   position: absolute;
-  background:linear-gradient(to right, #044863 , #F0F3BD);
+  background:linear-gradient(to right, #044863 , #F0F3BD, 75%, 100%);
+  background-image: url('/app/assets/image/rawpixel-660714-unsplash.jpg');
   height: 100%;
   width: 100%;
   top: 0;
   left: 0;
   opacity: 0.3;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
 }
 
 .payment{
